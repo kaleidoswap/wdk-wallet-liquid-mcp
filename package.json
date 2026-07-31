@@ -1,0 +1,42 @@
+{
+  "name": "wdk-wallet-liquid-mcp",
+  "version": "1.0.0",
+  "description": "MCP server exposing WDK Liquid wallet tools (balances, addresses, asset transfers) to AI agents",
+  "author": "KaleidoSwap",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "wdk-wallet-liquid-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@kaleidorg/wdk-wallet-liquid": "^1.0.0-beta.7",
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaleidoswap/wdk-wallet-liquid-mcp"
+  }
+}
