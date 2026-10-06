@@ -1,5 +1,10 @@
 # wdk-wallet-liquid-mcp
 
+> [!IMPORTANT]
+> **This repository is archived.** All of its tools now ship in the unified
+> [**kaleido-mcp**](https://github.com/kaleidoswap/kaleido-mcp) server (0.3.0+), together with
+> KaleidoSwap DEX, RLN, Spark, Liquid and MPP/L402 tools. Use `npx -y kaleido-mcp` instead.
+
 MCP server exposing a **Liquid network** wallet to AI agents, backed by
 [`@kaleidorg/wdk-wallet-liquid`](../wdk-wallet-liquid) (an in-process LWK
 wallet). No external daemon is required.
